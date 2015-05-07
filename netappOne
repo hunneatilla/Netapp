@@ -1,0 +1,8 @@
+system node run -node megaCluster-01
+vol options vol0 nosnap on
+snap list
+snap delete vol0 hourly.0
+snap delete vol0 hourly.1
+snap delete vol0 nightly.0
+snap delete vol0 hourly.2
+snap delete vol0 hourly.3
